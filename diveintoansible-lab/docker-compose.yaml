@@ -8,6 +8,7 @@ services:
     ports: 
      - ${UBUNTUC_PORT_SSHD}:22
      - ${UBUNTUC_PORT_TTYD}:7681
+     - 2000:80
     privileged: true
     volumes:
      - /sys/fs/cgroup:/sys/fs/cgroup:ro
